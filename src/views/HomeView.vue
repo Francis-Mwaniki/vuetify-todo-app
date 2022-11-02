@@ -71,6 +71,7 @@ export default {
       let task = this.tasks.filter((task) => task.id === id);
       task[0].done = !task[0].done;
     },
+    //delete
     deleteTask(id) {
       this.tasks = this.tasks.filter((task) => task.id !== id);
       this.newText = "";
